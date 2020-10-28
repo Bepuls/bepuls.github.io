@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f98749f7.chunk.css",
+    "main.js": "/static/js/main.52533bff.chunk.js",
+    "main.js.map": "/static/js/main.52533bff.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.170f8412.js",
+    "runtime-main.js.map": "/static/js/runtime-main.170f8412.js.map",
+    "static/js/2.20b43afa.chunk.js": "/static/js/2.20b43afa.chunk.js",
+    "static/js/2.20b43afa.chunk.js.map": "/static/js/2.20b43afa.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.875852b9eb30234f3c33fc9c5b502100.js": "/precache-manifest.875852b9eb30234f3c33fc9c5b502100.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.f98749f7.chunk.css.map": "/static/css/main.f98749f7.chunk.css.map",
+    "static/js/2.20b43afa.chunk.js.LICENSE": "/static/js/2.20b43afa.chunk.js.LICENSE",
+    "static/media/style.css": "/static/media/cork-wallet.c93975e3.png",
+    "static/media/desktop13.jpg": "/static/media/desktop13.b5428205.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.170f8412.js",
+    "static/js/2.20b43afa.chunk.js",
+    "static/css/main.f98749f7.chunk.css",
+    "static/js/main.52533bff.chunk.js"
+  ]
+}
