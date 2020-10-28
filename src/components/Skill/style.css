@@ -1,0 +1,21 @@
+.skill-box {
+  width: 22%;
+  margin: 10px 10px 40px 10px;
+  text-align: center;
+}
+
+.skill-name {
+  margin-top: 15px;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: bold;
+  color: #0c7664;
+  padding: 0;
+}
+
+
+@media (max-width: 767px) {
+  .skill-box {
+    width: 25%;
+  }
+}

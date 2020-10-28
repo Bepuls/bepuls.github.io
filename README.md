@@ -1,41 +1,67 @@
-## Set-RestrictionPolicy for less file
+# Portfolio
 
-[1. Tutorial](https://tecadmin.net/powershell-running-scripts-is-disabled-system/)
-[2. Video](https://www.youtube.com/watch?v=Q2uLUuq0Ft4)
-[4. MySolveImage](img/lessFileErrorSolve.png)
+## Description
 
-```
-Doing for run:
-PS E:\Web Development\coursera> cd css
-PS E:\Web Development\coursera\css> less styles.less styles.css
+### My Porfolio is a SPA (Single Page Application) written in React.js.
+### It includes: 
+    1. introduction to myself
+    2. skill listings
+    3. project overviews with links to repo and deployed sites 
+    4. education and experience history
+    5. contact information
+    6. links to my LinkedIn, GitHub and gmail
+    7. link to my Resume
 
-```
+## Deployed Page:
+https://mylescarey2019.github.io/Portfolio/
 
-## scss
 
-1. npm install --save-dev node-sass
-2. open your package.json file and add the following line into the scripts object "scss": "node-sass -o css/ css/"
+## Use Example:
 
-```
-"scripts": {
-    "start": "npm run lite",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lite": "lite-server",
-    "scss": "node-sass -o css/ css/"
-  },
-```
 
-3. npm run scss
+![use-example](./use-example.gif)
 
-### parallelshell modules error solve
 
-```
-change a line in your node_modules/parallelshell/index.js:105 file
 
-from: cwd: process.versions.node < '8.0.0' ? process.cwd : process.cwd(),
+## Getting Started
 
-to: cwd: parseInt(process.versions.node) < 8 ? process.cwd : process.cwd(),
-```
+### Dependencies
 
-[parrallelshell error solve](https://stackoverflow.com/questions/51060296/how-do-you-correctly-use-parallelshell-with-npm-scripts)
+* none - responsive design usable on phone, table, laptop or desktop
 
+### Installing
+
+* none necessary - use browser to view
+
+### Executing program
+
+* open in browser 
+    1. navigation links will move user between sections
+    2. projects links will take user to github repo page and deployed website
+    3. contact, Gmail and Resume links will open in seperate window
+    
+    
+
+## Help
+
+NA
+
+## Authors
+
+Myles Carey 
+mylescarey2019@gmail.com 
+
+## Version History
+
+* 0.1 - June 2019
+    * Initial Release
+
+* 2.0 - February 2020
+    * re-write as SPA using React.js 
+
+## License
+
+
+## Acknowledgments
+
+Thanks to beta testers - my 16yo & 18yo daughters and wife 

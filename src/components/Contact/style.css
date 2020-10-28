@@ -1,0 +1,57 @@
+li {
+  list-style-type: none;
+}
+
+li a {
+  display: block;
+}
+
+li.contact-list {
+  padding: 12px;
+  text-align: left;
+  margin-bottom: 8px;
+  transition: background-color .5s, box-shadow .5s;
+}
+
+li.contact-list i {
+  color: #0c7664;
+  font-size: 30px;
+  vertical-align: middle;
+}
+
+li.contact-list:hover:not(.isDisabled) {
+  border: 1px solid #e0e0e0; 
+  background-image: url(./cork-wallet.png);
+  padding: 11px;
+  box-shadow: 2px 4px 4px 2px rgba(0,0,0,0.7); 
+  border-radius: .5rem;
+}
+
+.icon-box {
+  display: inline-block;
+  width: 10%;
+  text-align: center;
+}
+
+.contact-name {
+  padding-left: 16px;
+  vertical-align: middle;
+}
+
+.isDisabled {
+  color: currentColor;
+  cursor: default;
+  text-decoration: none;
+  pointer-events: none;
+}
+
+@media (max-width: 767px) {
+  li.contact-list i {
+    font-size: 24px;
+  }
+
+  .contact-name {
+    font-size: 14px;
+  }
+  
+}

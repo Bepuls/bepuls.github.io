@@ -1,0 +1,36 @@
+
+  { 
+    "title": "Other",
+    "skills-list": [
+      {
+        "id": 1,
+        "skill": "/images/git.png",
+        "skillName": "Git"
+      },
+      {
+        "id": 2,
+        "skill": "/images/github.png",
+        "skillName": "GitHub"
+      }, 
+      {
+        "id": 3,
+        "skill": "/images/heroku.png",
+        "skillName": "Heroku"
+      },
+      {
+        "id": 4,
+        "skill": "/images/sql-server.png",
+        "skillName": "SQL Server"
+      },
+      {
+        "id": 5,
+        "skill": "/images/etl2.jpg",
+        "skillName": "SQL Server Integration Services - ETL"
+      },
+      {
+        "id": 6,
+        "skill": "/images/csharp.png",
+        "skillName": "C#"
+      }
+    ]
+  }

@@ -1,0 +1,44 @@
+.experience-box {
+  width: 90%;
+  font-size: 16px;
+}
+
+.experience-title {
+  font-weight: bold;
+  color: #0c7664;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.experience-role {
+  font-weight: bold;
+  color: #0c7664;
+  font-size: 18px;
+}
+
+.experience-box ul {
+  position: relative;
+  list-style: none;
+  margin-left: 32px;
+  padding-left: 1.2em;
+}
+
+.experience-box li {
+  padding: 8px;
+}
+
+.experience-box li:before {
+  position: absolute;
+  content: '✓';
+  font-size: 24px;
+  font-weight: bold;
+  color: #0c7664;
+  left: -20px; 
+}
+
+
+@media (max-width: 767px) {
+  .experience-list li {
+    font-size: 14px;
+  }
+}

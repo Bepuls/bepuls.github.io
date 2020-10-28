@@ -1,0 +1,23 @@
+#hero {
+  padding: 4px;
+  background-color: #000;
+  position: relative;
+  
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #hero {
+    padding: 4px;
+  }
+}
+
+@media (max-width: 767px) {
+  #hero {
+    /* note: any padding on top cause issue with scroll to top */
+    /* it causes scroll to go to top of viewport and thus dive */
+    /* under the fixed header - need to investigate why */
+    padding: 0px 4px 4px 4px;
+  }
+
+
+}
