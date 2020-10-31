@@ -1,0 +1,40 @@
+.Error {
+    top: 4vh;
+    left: 30%;
+    background-color: #bb2124;
+    width: 40%;
+    min-height: 4vh;
+    position: fixed;
+    /* opacity: 0; */
+    z-index: 600;
+    border-radius: 8px;
+    animation-name: error;
+    animation-duration: 2.5s;
+}
+
+@keyframes error {
+    0% {
+        top: 0;
+    }
+    20% {
+        top: 4vh;
+    }
+    80% {
+        top: 4vh;
+    }
+    100% {
+        top: -100%;
+    }
+}
+
+.Error p {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+@media (max-width: 450px) {
+    .Error {
+        width: 80%;
+        left: 10%;
+    }
+}
