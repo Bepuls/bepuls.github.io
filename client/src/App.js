@@ -1,49 +1,42 @@
-import React, { Component } from 'react'
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
-import { connect } from 'react-redux'
-
-import Layout from './Container/Layout/Layout'
-import Detail from './Container/BookDetail/Detail'
-import SignIn from './Container/SignIn/Signin'
-import SignUp from './Container/SignUp/SignUp'
-import SellBook from './Container/SellBook/SellBook'
-import * as action from './Store/actions/auth'
-import Logout from './Container/Logout/Logout'
-
+import React, { Component } from 'react';
+import Form from './components/Form';
+import DisplayUsers from './components/DisplayUsers';
+import axios from 'axios';
+import './App.css';
 class App extends Component {
-  componentDidMount() {
-    this.props.onTryAutoSignup();
+  state = {
+    users: []
   }
+
+  componentDidMount = () => {
+    this.fetchUsers();
+  };
+
+  fetchUsers = () => {
+    axios.get('/users')
+      .then((response) => {
+        const { users } = response.data;
+        this.setState({ users: [...this.state.users, ...users] })
+      })
+      .catch(() => alert('Error fetching new users'));
+  };
+
+
+  addUser = ({ name, position, company }) => {
+    this.setState({
+      users: [...this.state.users, { name, position, company }]
+    });
+  };
 
   render() {
     return (
-      <BrowserRouter>
-        <div>
-          <Switch>
-            <Route path="/" exact component={Layout} />
-            <Route path="/login" exact component={SignIn} />
-            <Route path="/logout" exact component={Logout} />
-            {/* <Route path="/sell-your-book" exact component={SellBook} /> */}
-            <Route path="/sell-your-book" exact component={SellBook} />
-            <Route path="/signup" exact component={SignUp} />
-            <Route path="/book/:id" component={Detail} />
-          </Switch>
-        </div>
-      </BrowserRouter>
-    )
+      <div className="App">
+        <Form addUser={this.addUser}/>
+        < DisplayUsers users={this.state.users} />
+
+      </div>
+    );
   }
 }
 
-const mapStateToProps = (state) => {
-  return {
-    isAuthenticate: state.token,
-  };
-};
-
-const mapDispatchToProps = (dispatch) => {
-  return {
-    onTryAutoSignup: () => dispatch(action.checkAuthState()),
-  };
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(App)
+export default App;
