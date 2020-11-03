@@ -15,7 +15,7 @@ const PORT = process.env.PORT || 8080; // Step 1
 
 
 // Step 2
-mongoose.connect( process.env.MONGODB_URI || 'mongodb://localhost/forummern', {
+mongoose.connect( process.env.MONGO_URI || 'mongodb://localhost/forummern', {
     useNewUrlParser: true
 });
 
@@ -23,6 +23,7 @@ mongoose.connect( process.env.MONGODB_URI || 'mongodb://localhost/forummern', {
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use('/', routes);
+
 
 // Step 3
 if (process.env.NODE_ENV === 'production') {
