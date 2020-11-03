@@ -8,7 +8,7 @@ const UserSchema = new Schema({
     date: Date
 });
 
-const MERN = mongoose.model('User', UserSchema);
+const MERN = mongoose.model('MERN', UserSchema);
 
 
-module.exports = MERN;
+module.exports = MERN; 
